@@ -5,6 +5,13 @@ The script monitors a centered region of the screen for the enemy attack indicat
 Tested on 1920×1080 resolution.  
 Other resolutions may require adjusting the search area or pixel color.
 
+🖥 Required Software
+AutoHotkey v2.0+ is required.  
+This script will not run on AutoHotkey v1.
+
+Download AutoHotkey v2 here:
+👉 https://www.autohotkey.com/
+
 🔧 Features
 Pixel‑based autoblock detection
 
@@ -18,13 +25,6 @@ Minimal codebase, low overhead
 
 F8 and F12 emergency exit hotkeys
 
-🖥 Requirements
-AutoHotkey v2
-
-Windows 10/11
-
-Kingdom Come 2 (PC)
-
 ⚙️ Installation
 Install AutoHotkey v2
 
@@ -32,7 +32,7 @@ Download KC2_Autoblock.ahk
 
 Run the script
 
-Launch the game
+Launch Kingdom Come 2
 
 Use the hotkeys below
 
@@ -67,6 +67,8 @@ searchHeight := 900
 Adjust these values if your resolution or UI color differs.
 
 🧩 Notes
+Requires AutoHotkey v2
+
 No tooltips
 
 No auto‑disable timer
