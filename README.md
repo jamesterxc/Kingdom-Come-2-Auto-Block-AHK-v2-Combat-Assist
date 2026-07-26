@@ -1,78 +1,78 @@
-KC2 Autoblock System (AutoHotkey v2)
-A lightweight AutoHotkey v2 script that automates Perfect Blocks, Ripostes, Master Strikes, and Evades in Kingdom Come 2 using pixel detection.
-Monitors the attack indicator (default: green shield) and triggers precise defensive actions.
+KC2 Autoblock System (Simplified AutoHotkey v2)
+A lightweight, high‑speed AutoHotkey v2 script that automates Perfect Blocks, Ripostes, and Master Strikes in Kingdom Come 2 using pixel detection.
+The script monitors a centered region of the screen for the enemy attack indicator (default: green shield) and instantly performs the correct defensive input.
 
 Tested on 1920×1080 resolution.  
-Adjust search area or tooltip position if using other resolutions — AI can assist with tuning.
+Other resolutions may require adjusting the search area or pixel color.
 
 🔧 Features
-Pixel‑based autoblock detection (no injection/memory edits)
+Pixel‑based autoblock detection
 
-Perfect Block, Riposte, Master Strike, Evade, and Block‑Only modes
+Two simple toggle modes (G and Y)
 
-Single‑toggle system (one mode active at a time)
+Fast, reliable input via SendInput
 
-Auto‑disable after 10 min
+Realtime process priority for maximum responsiveness
 
-Optional tooltips
+Minimal codebase, low overhead
 
-High‑priority input handling
-
-Runs only when KingdomCome.exe is active
-
-ESC toggle‑off / F8 exit
+F8 and F12 emergency exit hotkeys
 
 🖥 Requirements
-AutoHotkey v2.0+ → autohotkey.com
+AutoHotkey v2
 
-Windows 10/11
+Windows 10/11
 
-Kingdom Come 2 (PC)
+Kingdom Come 2 (PC)
 
 ⚙️ Installation
-Install AutoHotkey v2
+Install AutoHotkey v2
 
 Download KC2_Autoblock.ahk
 
 Run the script
 
-Launch Kingdom Come 2
+Launch the game
 
-Use hotkeys below
+Use the hotkeys below
 
 🎮 Hotkeys
 Key	Action
-Numpad 1	Perfect Block + Riposte
-Numpad 2	Master Strike
-Numpad 3	Perfect Block Only
-Numpad 4	Evade
-Numpad 5	Toggle Tooltips
-Numpad 6	Disable Active Mode
-F8	Exit Script
+G	Perfect Block + Riposte combo (toggle)
+Y	Master Strike (toggle)
+F8	Exit script
+F12	Emergency exit
 
 
 🧠 How It Works
-Scans a centered 900×900 region for:
+The script scans a centered 900×900 region for the attack indicator color:
 
 ahk
 color := 0x28BD59
 variation := 5
-Executes the correct combat sequence for the active mode.
-Each mode auto‑disables after 10 minutes.
+When detected:
 
-🛠 Config
+G mode performs Perfect Block → Riposte → follow‑up strike
+
+Y mode performs Perfect Block → Master Strike timing input
+
+Each mode loops until the same key is pressed again.
+
+🛠 Configuration
 ahk
 color := 0x28BD59
 variation := 5
 searchWidth := 900
 searchHeight := 900
-tooltipPosXPercent := 10
-tooltipPosYPercent := 190
+Adjust these values if your resolution or UI color differs.
+
 🧩 Notes
-Tested on 1920×1080
+No tooltips
 
-No game file edits or memory access
+No auto‑disable timer
 
-Simulated inputs only
+No multi‑mode system
+
+No game‑specific hotkey filtering
 
 Safe for single‑player use
