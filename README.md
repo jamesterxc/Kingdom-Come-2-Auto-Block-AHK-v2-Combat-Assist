@@ -14,7 +14,10 @@ Download AutoHotkey v2 here:
 
 🔧 Features
 Pixel‑based autoblock detection
-Two simple toggle modes (G and T)
+Two simple toggle modes
+G mode performs Perfect Block → Riposte → follow‑up strike
+Y mode performs Perfect Block → Master Strike timing input
+Each mode loops until the same key is pressed again.
 Fast, reliable input via SendInput
 Realtime process priority for maximum responsiveness
 Minimal codebase, low overhead
@@ -35,6 +38,8 @@ F8	Exit script
 F12	Emergency exit
 
 
+
+
 🧠 How It Works
 The script scans a centered 900×900 region for the attack indicator color:
 
@@ -42,10 +47,6 @@ ahk
 color := 0x28BD59
 variation := 5
 When detected:
-
-G mode performs Perfect Block → Riposte → follow‑up strike
-Y mode performs Perfect Block → Master Strike timing input
-Each mode loops until the same key is pressed again.
 
 🛠 Configuration
 ahk
