@@ -14,7 +14,7 @@ Download AutoHotkey v2 here:
 
 🔧 Features
 Pixel‑based autoblock detection
-Two simple toggle modes (G and Y)
+Two simple toggle modes (G and T)
 Fast, reliable input via SendInput
 Realtime process priority for maximum responsiveness
 Minimal codebase, low overhead
