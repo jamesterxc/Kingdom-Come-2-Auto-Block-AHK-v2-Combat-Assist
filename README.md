@@ -14,26 +14,17 @@ Download AutoHotkey v2 here:
 
 🔧 Features
 Pixel‑based autoblock detection
-
 Two simple toggle modes (G and Y)
-
 Fast, reliable input via SendInput
-
 Realtime process priority for maximum responsiveness
-
 Minimal codebase, low overhead
-
 F8 and F12 emergency exit hotkeys
 
 ⚙️ Installation
 Install AutoHotkey v2
-
 Download KC2_Autoblock.ahk
-
 Run the script
-
 Launch Kingdom Come 2
-
 Use the hotkeys below
 
 🎮 Hotkeys
@@ -53,9 +44,7 @@ variation := 5
 When detected:
 
 G mode performs Perfect Block → Riposte → follow‑up strike
-
 Y mode performs Perfect Block → Master Strike timing input
-
 Each mode loops until the same key is pressed again.
 
 🛠 Configuration
@@ -68,11 +57,8 @@ Adjust these values if your resolution or UI color differs.
 
 🧩 Notes
 Requires AutoHotkey v2
-
 No tooltips
-
 No auto‑disable timer
-
 No multi‑mode system
 
 No game‑specific hotkey filtering
